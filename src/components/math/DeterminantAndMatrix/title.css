@@ -1,0 +1,19 @@
+.Title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Title:before,
+.Title:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+.Title:after {
+    margin: 0 0 0 20px;
+}

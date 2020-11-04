@@ -1,0 +1,22 @@
+.disp{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.img{
+    width: 30vmax;
+    height: 30vmax;
+    border-radius: 50%;
+    border:  solid #dddddd;
+}
+.disp.Info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 50%;
+}
