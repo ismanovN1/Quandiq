@@ -17,6 +17,11 @@ const AboutMe = SuspenseContainer(React.lazy(() => import('./components/forMe/ab
 function App() {
 
     useEffect(() => {
+
+        setTimeout(()=>{
+            document.getElementById('Myname').style.display = 'none'
+        },3000)
+
         window.onscroll = function () {
             myFunction()
         };
@@ -24,7 +29,6 @@ function App() {
         let sticky = navbar.offsetTop;
 
         function myFunction() {
-            console.log(window.pageYOffset, sticky)
             if (window.pageYOffset >= (sticky)) {
                 navbar.classList.add("sticky")
             } else {
@@ -36,10 +40,10 @@ function App() {
 
     return (<div>
 
-        {/*<div id={'Myname'} className={'Myname'} ><h1 data-text="ISMANOV QUANDIQ"><span>ISMANOV QUANDIQ</span></h1></div>*/}
+        <div id={'Myname'} className={'Myname'} ><h1 data-text="ISMANOV QUANDIQ"><span>ISMANOV QUANDIQ</span></h1></div>
 
             <div id="navbar"><Navbar expand="lg" className="bg-primary">
-                <Navbar.Brand href="/Profile">
+                <Navbar.Brand href="/">
                     <svg width="2em" height="2em" viewBox="0 0 16 16" className="bi bi-house-door-fill"
                          fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path

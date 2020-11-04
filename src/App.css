@@ -23,7 +23,7 @@ div .Myname {
     overflow: hidden;
 }
 
-div h1 {
+.Myname h1 {
     position: relative;
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: calc(20px + 5vw);
@@ -38,7 +38,7 @@ div h1 {
     animation: shake 2.5s linear forwards;
 }
 
-div h1 span {
+.Myname h1 span {
     position: absolute;
     top: 0;
     left: 0;
@@ -115,23 +115,12 @@ div h1::after {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .matrix{
     width: auto;
     text-align: center;
     border-radius: 25px;
-    border-right: red solid;
-    border-left: red solid;
+    border-right: #ff0000 solid;
+    border-left: #ff0000 solid;
     padding: 10px;
     margin: auto;
     overflow: scroll visible;
